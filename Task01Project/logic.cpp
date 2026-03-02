@@ -8,6 +8,15 @@
 #include "logic.h"
 
 int count_nonzero_elements(int array[DEFAULT_SIZE], int size) {
+	if (size <= 0) {
+		return -1;
+	}
 
-	return 0;
+	int count = 0;
+
+	for (int i = 0; i < size; i++) {
+		array[i] != 0 ? count++ : count;
+	}
+	return count;
+	
 }
